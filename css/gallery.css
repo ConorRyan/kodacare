@@ -1,15 +1,15 @@
 /*-- -------------------------- -->
-<---         Portfolio          -->
+<---         Gallery          -->
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  #portfolio {
+  #gallery {
     padding-top: 3.125em;
     padding-bottom: 35%;
     position: relative;
     z-index: 5;
   }
-  #portfolio .container {
+  #gallery .container {
     width: 96%;
     max-width: 82.625em;
     padding: 0;
@@ -28,7 +28,7 @@
     gap: 1.875em;
     font-size: min(1.3vw, 1em);
   }
-  #portfolio .container .row {
+  #gallery .container .row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -41,47 +41,47 @@
             justify-content: flex-start;
     gap: 1.875em;
   }
-  #portfolio .container .row:nth-of-type(1) picture:nth-of-type(1) {
+  #gallery .container .row:nth-of-type(1) picture:nth-of-type(1) {
     width: 26.25em;
     height: 35.4375em;
   }
-  #portfolio .container .row:nth-of-type(1) picture:nth-of-type(2) {
+  #gallery .container .row:nth-of-type(1) picture:nth-of-type(2) {
     width: 26.25em;
     height: 39.3125em;
   }
-  #portfolio .container .row:nth-of-type(1) picture:nth-of-type(3) {
+  #gallery .container .row:nth-of-type(1) picture:nth-of-type(3) {
     width: 26.25em;
     height: 32em;
   }
-  #portfolio .container .row:nth-of-type(2) picture:nth-of-type(1) {
+  #gallery .container .row:nth-of-type(2) picture:nth-of-type(1) {
     width: 26.25em;
     height: 30.75em;
   }
-  #portfolio .container .row:nth-of-type(2) picture:nth-of-type(2) {
+  #gallery .container .row:nth-of-type(2) picture:nth-of-type(2) {
     width: 26.25em;
     height: 32.3125em;
   }
-  #portfolio .container .row:nth-of-type(2) picture:nth-of-type(3) {
+  #gallery .container .row:nth-of-type(2) picture:nth-of-type(3) {
     width: 26.25em;
     height: 39.3125em;
   }
-  #portfolio .container .row:nth-of-type(3) picture:nth-of-type(1) {
+  #gallery .container .row:nth-of-type(3) picture:nth-of-type(1) {
     width: 26.25em;
     height: 39.0625em;
   }
-  #portfolio .container .row:nth-of-type(3) picture:nth-of-type(2) {
+  #gallery .container .row:nth-of-type(3) picture:nth-of-type(2) {
     width: 26.25em;
     height: 28.25em;
   }
-  #portfolio .container .row:nth-of-type(3) picture:nth-of-type(3) {
+  #gallery .container .row:nth-of-type(3) picture:nth-of-type(3) {
     width: 26.25em;
     height: 39.3125em;
   }
-  #portfolio .container .row picture {
+  #gallery .container .row picture {
     position: relative;
     display: block;
   }
-  #portfolio .container .row picture img {
+  #gallery .container .row picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -94,7 +94,7 @@
 }
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
-  #portfolio {
+  #gallery {
     padding: 9.375em 0;
   }
 }

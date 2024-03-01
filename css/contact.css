@@ -265,6 +265,9 @@
   #form .contact-right .info-group:last-of-type {
     margin-bottom: 2.25em;
   }
+  #form #contact .textarea:hover .hover-box {
+    height: 12.75em;
+  }
 }
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {

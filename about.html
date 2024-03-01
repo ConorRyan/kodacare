@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Swap our for actual link-->
-    <link rel="canonical" href="https://www.company.com/about">
+    <link rel="canonical" href="https://conorryan.github.io/perrine-website/about.html">
 
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -21,14 +20,14 @@
 
     <!--Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Preload -->
-    <link rel="preload" as="image" href="images/cabinets2-m.jpg">
+    <link rel="preload" as="image" href="images/koda/koda-horizon.jpg">
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
 
@@ -38,7 +37,7 @@
 
     <!--Put analytics tag here at the bottom to prevent it from render blocking-->
 
-    <title>Company Name | About Us | Town and State</title>
+    <title>KodaCare | About Me | Ottawa</title>
 </head>
 <body>
     <!--Screen reader skip main nav-->
@@ -59,18 +58,19 @@
             <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
             <a class="logo" aria-label="click to go to home page" href="index.html">
                 <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
-                <img class="light" aria-hidden="true" src="images/logo-light.png" decoding="async" alt="logo" width="221" height="66">
+                <img class="light" aria-hidden="true" src="images/logo/logo-full-white.png" decoding="async" alt="logo" width="221" height="66">
 
                 <!--Dark Colored Logo-->
-                <img class="dark" aria-hidden="true" src="images/logo-blue.png" decoding="async" loading="lazy" alt="logo" width="221" height="66">
+                <img class="dark" aria-hidden="true" src="images/logo/logo-full-black.png" decoding="async" loading="lazy" alt="logo" width="221" height="66">
             </a>
 
             <!--Main Nav-->
             <nav id="navbar-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a class="active" href="about.html">About Us</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a class="active" href="about.html">About Me</a></li>
+                    <li><a href="services.html">Services & Rates</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -97,11 +97,10 @@
         <!-- ============================================ -->
     
         <section id="int-hero">
-            <h1 id="home-h">About Us</h1>
+            <h1 id="home-h">About Me</h1>
             <picture>
-                <source media="(max-width: 600px)" srcset="images/cabinets2-m.jpg">
-                <source media="(min-width: 601px)" srcset="images/cabinets2.jpg">
-                <img aria-hidden="true" decoding="async" src="images/cabinets2.jpg" alt="cabinets" width="400" height="662">
+                <source media="(min-width: 601px)" srcset="images/koda/koda-horizon.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="images/koda/koda-horizon.jpg" alt="Koda and I looking out to the horizon" width="400" height="662">
             </picture>
         </section>
 
@@ -112,44 +111,39 @@
         <section id="sidebyside" class="sidebyside">
             <div class="container">
                 <div class="content">
-                    <h2 class="title">Lorem ipsum dolor sit amet consectetur.</h2>
+                    <h2 class="title">Animal-assited therapist and physiotherapist</h2>
                      <p>
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam debitis dolor consectetur dolorem inventore modi tenetur ex odit, amet beatae ad, doloribus tempora quae ab nulla minus temporibus at veritatis!
+                         Hi! My name is Perrine and I come from Belgium. I worked 7 years as a physiotherapist before following my dream of working with my dog as my partner. I've done two years of intensive training in animal-assisted therapy and an certified by the <a href="https://membres.corpozootherapeute.com/">Corporation des zoothérapeutes du Québec (CZQ)</a>. 
                      </p>
                      <p>
-                         <strong>List if you need it:</strong>
+                         <strong>My qualifications:</strong>
                       </p>
                      <ul>
                         <li>
                             <img aria-hidden="true" loading="lazy" decoding="async" src="images/check.svg" alt="check mark" width="20" height="20">
-                            <span>List item about something</span>
+                            <span>Master's degree in physiotherapy.</span>
                         </li>
                         <li>
                             <img aria-hidden="true" loading="lazy" decoding="async" src="images/check.svg" alt="check mark" width="20" height="20">
-                            <span>List item about something</span>
+                            <span>7 years of experience as a physiotherapist.</span>
                         </li>
                         <li>
                             <img aria-hidden="true" loading="lazy" decoding="async" src="images/check.svg" alt="check mark" width="20" height="20">
-                            <span>List item about something</span>
+                            <span>2 years zootherapy bootcamp.</span>
                         </li>
                         <li>
                             <img aria-hidden="true" loading="lazy" decoding="async" src="images/check.svg" alt="check mark" width="20" height="20">
-                            <span>List item about something</span>
-                        </li>
-                        <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="images/check.svg" alt="check mark" width="20" height="20">
-                            <span>List item about something</span>
+                            <span>Worked with multiple Ottawa-based zootherapists.</span>
                         </li>
                     </ul>
                      <p>
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe laborum nam consequuntur porro inventore odio? Quod autem alias ratione cum reiciendis qui quaerat, sequi voluptatum voluptatibus, iusto itaque sed ullam. Quis, maiores corrupti. Rerum quo laudantium vero magnam tempora!
+                         Therapy is my passion and I believe in tailoring my approach to each individual as everyone has different needs and wishes.
                      </p>
-                     <a class="button-solid" href="conttact.html">Get Free Quote</a>
+                     <a class="button-solid" href="conttact.html">Contact me</a>
                 </div>
                 <picture class="image-box">
-                     <source media="(max-width: 600px)" srcset="images/cabinets2-m.jpg">
-                     <source media="(min-width: 601px)" srcset="images/cabinets2.jpg">
-                     <img aria-hidden="true" loading="lazy" decoding="async" src="images/cabinets2.jpg" alt="cabinets" width="400" height="662">
+                     <source media="(min-width: 601px)" srcset="images/perrine-walking.jpg">
+                     <img aria-hidden="true" loading="lazy" decoding="async" src="images/perrine-walking.jpg" alt="me walking" width="400" height="662">
                  </picture>
             </div>
        </section>
@@ -160,16 +154,15 @@
 
         <section id="cta">
             <div class="container">
-                <h2 class="title">Get It Done <br> With Us Today</h2>
+                <h2 class="title">Meet Koda and I Today</h2>
                 <p>
-                    Say something catchy, informative, and encouraging to click the button to go to the contact page.  I like to add these to the bottom of all pages.
+                    It's never too late to reach your paw-tential!
                 </p>
-                <a href="contact.html" class="button-solid">Free Estimate</a>
+                <a href="contact.html" class="button-solid">Contact me</a>
             </div>
             <picture>
-                <source media="(max-width: 600px)" srcset="images/cabinets2-m.webp">
-                <source media="(min-width: 601px)" srcset="images/cabinets2.jpg">
-                <img aria-hidden="true" loading="lazy" decoding="async" src="images/cabinets2.jpg" alt="kitchen cabinets" width="1920" height="1280">
+                <source media="(min-width: 601px)" srcset="images/koda/koda-walk-in-snow.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="images/koda/koda-walk-in-snow.jpg" alt="Koda and I walking in the snow" width="1920" height="1280">
              </picture>
         </section>
 
@@ -182,32 +175,29 @@
     <footer id="footer">
         <div class="container">
             <div class="left-section">
-                <a class="logo" href="index.html"><img loading="lazy" decoding="async" src="images/logo-light.png" alt="logo" width="264" height="78"></a>
-                <p>
-                    Extra content if you need it, if not you can delete this whole p tag. I usually do.
-                </p>
+                <a class="logo" href="index.html"><img loading="lazy" decoding="async" src="images/logo/logo-full-white.png" alt="logo" width="264" height="78"></a>
             </div>
             <div class="right-section">
                 <div class="lists">
                     <ul>
                         <li><h2>Information</h2></li>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="services.html">Services & Rates</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="testimonials.html">Reviews</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <ul>
                         <li><h2>Services</h2></li>
-                        <li>Service1</li>
-                        <li>Service2</li>
-                        <li>Service4</li>
-                        <li>Service5</li>
+                        <li>Therapeutic Support</li>
+                        <li>Motor Exercises</li>
+                        <li>Recreational Activities</li>
+                        <li>Animal Discovery</li>
                     </ul>
                     <ul>
                         <li><h2>Contact</h2></li>
-                        <li><a href="contact.html">First Address Line<br>Denver CO 80206</a></li>
-                        <li><a href="tel:555-779-4407">T: (555) 779-4407</a></li>
+                        <li><a href="contact.html">Contact Form</a></li>
                         <li><a href="mailto:email@email.com">Click to Email</a></li>
                     </ul>
                 </div>
@@ -215,9 +205,12 @@
         </div>
 
         <div class="credit">
-            <span>Designed and Hand Coded by</span>
-            <a href="" target="_blank" rel="noopener">Your Company Name</a>
-            <span class="copyright"> Copyright 2021 - Present</span></div>
+            <span>Designed and coded by</span>
+            <a href="https://github.com/conorryan" target="_blank" rel="noopener">Conor Ryan</a>
+            <span>thanks to <a href="https://github.com/Oak-Harbor-Kits/Starter-KitV3" target="_blank" rel="noopener">Oak-Harbor-Kits/Starter-KitV3</a></span>
+            <span>and  <a href="https://icons8.com/line-awesome" target="_blank" rel="noopener">line-awesome icons.</a></span>
+            <br><span class="copyright"> Copyright 2024 - Present</span>
+        </div>
     </footer>
 
     <script defer src="nav.js"></script>
