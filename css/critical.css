@@ -10,6 +10,7 @@
     position: relative;
     z-index: 1;
   }
+
   #hero:before {
     content: '';
     position: absolute;
@@ -22,6 +23,7 @@
     left: 0;
     z-index: -10;
   }
+
   #hero picture {
     position: absolute;
     top: 0;
@@ -30,6 +32,7 @@
     width: 100%;
     z-index: -11;
   }
+
   #hero picture img {
     position: absolute;
     top: 0;
@@ -37,8 +40,9 @@
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
+
   #hero .hero-content {
     width: 96%;
     max-width: 71.5em;
@@ -47,14 +51,17 @@
     z-index: 10;
     text-align: center;
   }
+
   #hero .hero-content {
     padding: 0;
   }
+
   #hero .heroText {
     width: 100%;
     margin: auto;
     max-width: 56.875em;
   }
+
   #hero h1 {
     font-weight: bold;
     font-size: min(12vw, 4em);
@@ -67,6 +74,7 @@
     margin-bottom: 1.4375em;
     position: relative;
   }
+
   #hero h1:before {
     content: '';
     position: absolute;
@@ -78,8 +86,9 @@
     bottom: -0.25em;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
+
   #hero p {
     line-height: 1.55em;
     margin: auto;
@@ -90,12 +99,14 @@
     max-width: 34.27777778em;
     opacity: 1;
   }
+
   #hero .button-solid {
     margin: auto;
     display: inline-block;
     width: auto;
   }
 }
+
 /* Tablet */
 @media only screen and (min-width: 48em) {
   #hero {
@@ -103,16 +114,18 @@
     z-index: 1;
     overflow: hidden;
   }
+
   #hero .hero-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     position: relative;
   }
 }
+
 /* Small Desktop */
 @media only screen and (min-width: 1300px) {
   #hero {
@@ -124,10 +137,12 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+
   #hero picture {
     display: none;
   }
 }
+
 /*-- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/
@@ -145,9 +160,10 @@
     padding: 3.125em 1.25em;
     border-top: 0.375em solid var(--primary);
     -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
     margin-bottom: 3.125em;
   }
+
   .services .card {
     display: block;
     width: 100%;
@@ -155,9 +171,11 @@
     margin: auto;
     margin-bottom: 3.125em;
   }
+
   .services .card:last-of-type {
     margin-bottom: 0;
   }
+
   .services .card picture {
     background: var(--primary);
     width: 5.5em;
@@ -166,19 +184,21 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: auto;
     margin-bottom: 1.4375em;
     border-radius: 50%;
   }
+
   .services .card picture img {
     width: 3em;
     height: 3em;
   }
+
   .services .card h2 {
     text-align: center;
     font-size: 2em;
@@ -187,6 +207,7 @@
     color: #1a1a1a;
     margin-bottom: 0.65em;
   }
+
   .services .card p {
     text-align: center;
     line-height: 1.33333333em;
@@ -194,6 +215,7 @@
     opacity: .7;
   }
 }
+
 /* Inbetween */
 @media only screen and (min-width: 768px) {
   .services {
@@ -202,35 +224,41 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     width: 98%;
   }
+
   .services .card {
     margin: 0;
     max-width: 20.3125em;
   }
 }
+
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
   .services {
     padding: 3.125em 5em;
   }
+
   .services .card {
     max-width: 22.3125em;
   }
 }
+
 /* Dark mode */
 @media only screen and (min-width: 0em) {
   body.dark-mode #services {
     background: var(--medium);
   }
+
   body.dark-mode #services picture {
     background: var(--primaryDark);
   }
+
   body.dark-mode #services h2 {
     color: #fff;
     font-weight: bold;
