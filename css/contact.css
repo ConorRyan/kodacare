@@ -317,27 +317,3 @@
     font-size: inherit;
   }
 }
-
-/* Dark Mode */
-@media only screen and (min-width: 0px) {
-  body.dark-mode #form .title {
-    color: #fff;
-  }
-
-  body.dark-mode #form p {
-    color: #fff;
-  }
-
-  body.dark-mode #form .input-group label {
-    color: #fff;
-  }
-
-  body.dark-mode #form .input-group input,
-  body.dark-mode #form .input-group textarea {
-    color: #fff;
-  }
-
-  body.dark-mode #form .contact-right {
-    background: var(--medium);
-  }
-}

@@ -282,10 +282,3 @@
     z-index: 1;
   }
 }
-
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #cta:after {
-    display: none;
-  }
-}

@@ -127,22 +127,6 @@
   }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #reviews .review {
-    background: var(--medium);
-  }
-
-  body.dark-mode #reviews .review .name {
-    color: #fff;
-  }
-
-  body.dark-mode #reviews .review .desc {
-    color: #fff;
-    opacity: .7;
-  }
-}
-
 /*-- -------------------------- -->
 <---    Final Call To Action    -->
 <--- -------------------------- -*/
@@ -269,12 +253,5 @@
     top: 0;
     left: 0;
     z-index: 1;
-  }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #cta:after {
-    display: none;
   }
 }
