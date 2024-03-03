@@ -451,7 +451,7 @@
     color: #1a1a1a;
   }
 
-  body.scroll #language-select a {
+  body.scroll #language-select * {
     color: #000;
   }
 
@@ -960,21 +960,19 @@
 @media only screen and (min-width: 0em) {
 
   #language-select {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 3.75em;
     width: 3em;
     height: 3em;
-    background: transparent;
-    border: none;
-    overflow: hidden;
-    padding: 0;
   }
 
-  #language-select a {
-    z-index: 2;
+  #language-select * {
+    font-size: 0.8em;
     color: #000;
   }
 }
@@ -983,14 +981,16 @@
 @media only screen and (min-width: 64em) {
   #language-select {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: auto;
     right: auto;
     transform: none;
-    margin-left: 1.875em;
-    margin-bottom: 0em;
+    padding-left: 1em;
   }
 
-  #language-select a {
+  #language-select * {
     color: #fff;
   }
 }
