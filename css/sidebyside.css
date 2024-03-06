@@ -143,6 +143,7 @@
   }
 
   .sidebyside.reverse .image-box {
+    margin: 0;
     margin-left: 10.625em;
     order: 2;
   }
@@ -166,13 +167,5 @@
   .sidebyside.square .image-box {
     width: 38.1875em;
     height: 38.1875em;
-  }
-}
-
-/* Inbetween */
-@media only screen and (min-width: 666px) {
-  .sidebyside.square .image-box {
-    width: 27.5em;
-    height: 27.5em;
   }
 }
