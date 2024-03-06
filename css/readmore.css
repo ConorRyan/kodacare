@@ -1,0 +1,11 @@
+/*-- -------------------------- -->
+<---        Read more           -->
+<--- -------------------------- -*/
+
+.read-more {
+  display: block;
+  overflow: hidden;
+
+  -webkit-transition: max-height 0.3s;
+  transition: max-height 0.3s;
+}

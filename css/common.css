@@ -396,7 +396,8 @@
   }
 
   #navigation #navbar-menu.open {
-    height: 21.5em;
+    height: 15em;
+    /* 21.5em */
     padding-top: 1.25em;
     z-index: -100;
   }

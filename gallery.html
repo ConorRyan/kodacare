@@ -35,7 +35,10 @@
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
 
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/gallery.css" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript>
+        <link rel="stylesheet" href="css/gallery.css">
+    </noscript>
 
     <!--Put analytics tag here at the bottom to prevent it from render blocking-->
 
@@ -73,7 +76,7 @@
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a class="active" href="gallery.html">Gallery</a></li>
-                    <li><a href="reviews.html">Reviews</a></li>
+                    <!--li><a href="reviews.html">Reviews</a></li-->
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -209,8 +212,8 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Me</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="testimonials.html">Reviews</a></li>
+                        <!--li><a href="gallery.html">Gallery</a></li-->
+                        <!--li><a href="reviews.html">Reviews</a></li-->
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <ul>
@@ -244,22 +247,8 @@
         </div>
     </footer>
 
-    <script defer src="nav.js"></script>
-    <!--
-        This script adds a class to the body after scrolling 100px
-        and we used these body.scroll styles to create some on scroll 
-        animations with the navbar
-    -->
-    <script defer>
-        document.addEventListener('scroll', (e) => {
-            const scroll = document.documentElement.scrollTop;
-            if (scroll >= 100) {
-                document.querySelector('body').classList.add('scroll')
-            } else {
-                document.querySelector('body').classList.remove('scroll')
-            }
-        });
-    </script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/scroll.js"></script>
 
 </body>
 

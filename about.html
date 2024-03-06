@@ -35,7 +35,12 @@
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
 
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/calltoaction.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="css/sidebyside.css" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript>
+        <link rel="stylesheet" href="css/calltoaction.css">
+        <link rel="stylesheet" href="css/sidebyside.css">
+    </noscript>
 
     <!--Put analytics tag here at the bottom to prevent it from render blocking-->
 
@@ -72,8 +77,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a class="active" href="about.html">About Me</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="reviews.html">Reviews</a></li>
+                    <!--li><a href="gallery.html">Gallery</a></li-->
+                    <!--li><a href="reviews.html">Reviews</a></li-->
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -109,7 +114,7 @@
         <!--                   About                      -->
         <!-- ============================================ -->
 
-        <section id="sidebyside" class="sidebyside">
+        <section class="sidebyside">
             <div class="container">
                 <div class="content">
                     <h2 class="title">Animal-assited therapist and physiotherapist</h2>
@@ -215,8 +220,8 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Me</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="testimonials.html">Reviews</a></li>
+                        <!--li><a href="gallery.html">Gallery</a></li-->
+                        <!--li><a href="reviews.html">Reviews</a></li-->
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <ul>
@@ -250,23 +255,8 @@
         </div>
     </footer>
 
-    <script defer src="nav.js"></script>
-    <!--
-        This script adds a class to the body after scrolling 100px
-        and we used these body.scroll styles to create some on scroll 
-        animations with the navbar
-    -->
-    <script defer>
-        document.addEventListener('scroll', (e) => {
-            const scroll = document.documentElement.scrollTop;
-            if (scroll >= 100) {
-                document.querySelector('body').classList.add('scroll')
-            } else {
-                document.querySelector('body').classList.remove('scroll')
-            }
-        });
-    </script>
-
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/scroll.js"></script>
 </body>
 
 </html>

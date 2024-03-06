@@ -35,7 +35,13 @@
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
 
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/calltoaction.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="css/sidebyside.css" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript>
+        <link rel="stylesheet" href="css/calltoaction.css">
+        <link rel="stylesheet" href="css/sidebyside.css">
+    </noscript>
+
 
     <!--Put analytics tag here at the bottom to prevent it from render blocking-->
 
@@ -72,8 +78,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a class="active" href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="reviews.html">Reviews</a></li>
+                    <!--li><a href="gallery.html">Gallery</a></li-->
+                    <!--li><a href="reviews.html">Reviews</a></li-->
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -109,11 +115,10 @@
         <!--                   About                      -->
         <!-- ============================================ -->
 
-        <section id="sidebyside" class="sidebyside">
+        <section class="sidebyside">
             <div class="container">
                 <div class="content">
-                    <h2 class="title">Services</h2>
-
+                    <h2 class="title">Information and Rates</h2>
                     <p>
                         Before booking a session I recommend getting to know each other over a free 20 minute video call
                         to make sure I can offer you the best care I can.
@@ -121,133 +126,85 @@
 
                     <p>
                         <strong>The rate for a 1 hour session is 100$.</strong> Shorter or longer sessions are possible
-                        based on the patient and needs. I offer all my services at home.
+                        based on the patient and needs.
                     </p>
 
-
-                    <h3>Therapeutic Support</h3>
                     <p>
-                        Better manage emotions and stress, gain self-confidence, learn to set your limits and create
-                        your bubble.
-                        <span class="read-more therapeutic-support">Some more
-                            information here</span>
-                        <a class="read-more-button" x-target=".therapeutic-support" x-showing="true">Read Less</a>
+                        I travel to wherever you would like the session to take place: at home, in a
+                        center, at school...
                     </p>
 
-                    <h3>Motricity Development</h3>
                     <p>
-                        Improve gross and final motor skills to live a better life. My experience as a physiotherapist
-                        specializing in neurological disorders allows me to tailor an approach to your case.
-                        <span class="read-more motricity-development">Some more
-                            information here</span>
-                        <a class="read-more-button" x-target=".motricity-development" x-showing="true">Read Less</a>
+                        <strong>Read more about all my services below!</strong>
                     </p>
-
-
-                    <h3>Recreational Activities</h3>
-                    <p>
-                        This type of activity is typically aimed towards children - for example for a classroom session
-                        to learn about dogs, how interact with them, all while having fun in the process!
-                        <span class="read-more recreational-activities">Some more
-                            information here</span>
-                        <a class="read-more-button" x-target=".recreational-activities" x-showing="true">Read Less</a>
-                    </p>
-
-                    <h3>Educational Sessions</h3>
-                    <p>
-                        Discover the world of dogs and learn how they work in a fun way. It's also a good way to learn
-                        to communicate with a dog, how to be clear.
-                        <span class="read-more educational-activities">Some more
-                            information here</span>
-                        <a class="read-more-button" x-target=".educational-activities" x-showing="true">Read Less</a>
-                    </p>
-
                 </div>
-                <picture class="image-box">
-                    <source media="(min-width: 601px)" srcset="images/perrine-walking.jpg">
+                <picture class="image-box square">
                     <img aria-hidden="true" loading="lazy" decoding="async" src="images/perrine-walking.jpg"
-                        alt="me walking" width="400" height="662">
+                        alt="me walking">
                 </picture>
             </div>
         </section>
 
-        <section id="sidebyside" class="sidebyside">
+        <section class="sidebyside-reverse">
             <div class="container">
                 <div class="content">
-                    <h2 class="title">Services</h2>
-
+                    <h2 class="title">Therapeutic Support</h2>
                     <p>
-                        Before booking a session I recommend getting to know each other over a free 20 minute video call
-                        to make sure you get the best care.
+                        Better manage emotions and stress, gain self-confidence, learn to set your limits and create
+                        your bubble.
                     </p>
-
-                    <p>
-                        <strong>The rate for a 1 hour session is 100$.</strong> Shorter or longer sessions are possible
-                        based on need. I offer all my services at home.
-                    </p>
-
-                    <ul>
-                        <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="images/check.svg"
-                                alt="check mark" width="20" height="20">
-                            <span><strong>Therapeutic Support</strong>
-                                <br>Better manage emotions and stress, gain self-confidence, learn
-                                to set your limits and create
-                                your bubble.
-                                <br><span class="read-more therapeutic-support-2">Some more
-                                    information here</span>
-                                <a class="read-more-button" x-target=".therapeutic-support-2" x-showing="true"></a>
-                            </span>
-                        </li>
-
-
-                        <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="images/check.svg"
-                                alt="check mark" width="20" height="20">
-                            <span><strong>Motricity Development</strong>
-                                <br>Improve gross and final motor skills to live a better life. My experience as a
-                                physiotherapist specializing in neurological disorders allows me to tailor an approach
-                                to your case.
-                                <br><span class="read-more abs">Some more information here</span>
-                                <a class="read-more-button" x-target=".abs" x-showing="true">Read
-                                    Less</a>
-                            </span>
-                        </li>
-
-                        <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="images/check.svg"
-                                alt="check mark" width="20" height="20">
-                            <span><strong>Educational Sessions</strong>
-                                <br>Discover the world of dogs and learn how they work in a fun way. It's also a good
-                                way to learn
-                                to communicate with a dog, how to be clear.
-                                <br><span class="read-more sss">Some more
-                                    information here</span>
-                                <a class="read-more-button" x-target=".sss" x-showing="true">Read
-                                    Less</a>
-                            </span>
-                        </li>
-
-                        <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="images/check.svg"
-                                alt="check mark" width="20" height="20">
-                            <span><strong>Recreational Activities</strong>
-                                <br>This type of activity is typically aimed towards children - for example for a
-                                classroom session
-                                to learn about dogs, how interact with them, all while having fun in the process!
-                                <br><span class="read-more xxx">Some more
-                                    information here</span>
-                                <a class="read-more-button" x-target=".xxx" x-showing="true">Read
-                                    Less</a>
-                            </span>
-                        </li>
-                    </ul>
-
                 </div>
-                <picture class="image-box">
-                    <source media="(min-width: 601px)" srcset="images/perrine-walking.jpg">
+                <picture class="image-box square">
                     <img aria-hidden="true" loading="lazy" decoding="async" src="images/perrine-walking.jpg"
-                        alt="me walking" width="400" height="662">
+                        alt="me walking">
+                </picture>
+            </div>
+        </section>
+
+        <section class="sidebyside">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">Motricity Development</h2>
+                    <p>
+                        Improve gross and final motor skills to live a better life. My experience as a physiotherapist
+                        specializing in neurological disorders allows me to tailor an approach to your case.
+                    </p>
+                </div>
+                <picture class="image-box square">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/perrine-walking.jpg"
+                        alt="me walking">
+                </picture>
+            </div>
+        </section>
+
+        <section class="sidebyside-reverse">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">Recreational Activities</h2>
+                    <p>
+                        This type of activity is typically aimed towards children - for example for a classroom session
+                        to learn about dogs, how interact with them, all while having fun in the process!
+                    </p>
+                </div>
+                <picture class="image-box square">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/perrine-walking.jpg"
+                        alt="me walking">
+                </picture>
+            </div>
+        </section>
+
+        <section class="sidebyside">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">Educational Activities</h2>
+                    <p>
+                        Discover the world of dogs and learn how they work in a fun way. It's also a good way to learn
+                        to communicate with a dog, how to be clear.
+                    </p>
+                </div>
+                <picture class="image-box square">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/perrine-walking.jpg"
+                        alt="me walking">
                 </picture>
             </div>
         </section>
@@ -260,7 +217,7 @@
             <div class="container">
                 <h2 class="title">Meet Koda and I Today</h2>
                 <p>
-                    Get the paw-sitive results you've been looking for!
+                    Found what you're looking for? Book now!
                 </p>
                 <a href="contact.html" class="button-solid">Contact me</a>
             </div>
@@ -292,8 +249,8 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Me</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="testimonials.html">Reviews</a></li>
+                        <!--li><a href="gallery.html">Gallery</a></li-->
+                        <!--li><a href="reviews.html">Reviews</a></li-->
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <ul>
@@ -327,54 +284,9 @@
         </div>
     </footer>
 
-    <script defer src="nav.js"></script>
-    <!--
-        This script adds a class to the body after scrolling 100px
-        and we used these body.scroll styles to create some on scroll 
-        animations with the navbar
-    -->
-    <script defer>
-        document.addEventListener('scroll', (e) => {
-            const scroll = document.documentElement.scrollTop;
-            if (scroll >= 100) {
-                document.querySelector('body').classList.add('scroll')
-            } else {
-                document.querySelector('body').classList.remove('scroll')
-            }
-        });
-
-        const readMores = document.querySelectorAll(".read-more-button");
-        readMores.forEach(readMore => {
-            readMore.addEventListener('click', (e) => {
-                const target = document.querySelector(readMore.getAttribute("x-target"));
-                const isShowing = readMore.getAttribute("x-showing");
-                if (isShowing === 'true') {
-                    target.setAttribute("x-initial-height", target.offsetHeight + "px");
-                    target.style.maxHeight = '0px';
-                    readMore.innerHTML = 'Read More 🞃';
-                    readMore.setAttribute('x-showing', 'false');
-                } else {
-                    target.style.maxHeight = target.getAttribute("x-initial-height");
-                    readMore.innerHTML = 'Read Less 🞁';
-                    readMore.setAttribute('x-showing', 'true');
-
-                    // Clear the max-height in case the screne got resized and it is cut
-                    target.addEventListener('transitionend', () => {
-                        if (target.style.maxHeight !== "0px") {
-                            target.style.maxHeight = '';
-                        }
-                        target.removeEventListener('transitionend', this);
-                    });
-                }
-
-
-            });
-
-            // We start with everything visible and activate the functionality here - so if JS is disabled all information is there from the get-go
-            readMore.click();
-        });
-
-    </script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/scroll.js"></script>
+    <script defer src="js/readmore.js"></script>
 
 </body>
 

@@ -34,13 +34,13 @@
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
 
-    <link rel="stylesheet" href="css/index-critical.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/common.css">
-
-    <!--Defer loading the whole page css-->
-    <link rel="stylesheet" href="css/index.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="css/calltoaction.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="css/sidebyside.css" media="print" onload="this.media='all'; this.onload=null;">
     <noscript>
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/calltoaction.css">
+        <link rel="stylesheet" href="css/sidebyside.css">
     </noscript>
 
     <title>KodaCare | Animal-Assisted Therapy | Ottawa</title>
@@ -76,8 +76,8 @@
                     <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="reviews.html">Reviews</a></li>
+                    <!--li><a href="gallery.html">Gallery</a></li-->
+                    <!--li><a href="reviews.html">Reviews</a></li-->
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -163,7 +163,7 @@
         <!--                   About                      -->
         <!-- ============================================ -->
 
-        <section id="sidebyside" class="sidebyside">
+        <section class="sidebyside">
             <div class="container">
                 <div class="content">
                     <h2 class="title">How Animal-Assisted Therapy can help you</h2>
@@ -217,7 +217,7 @@
         <!--          Extra Content For Ranking           -->
         <!-- ============================================ -->
 
-        <section id="sidebyside-reverse">
+        <section class="sidebyside-reverse">
             <div class="container">
                 <div class="content">
                     <h2 class="title">Koda, my dog</h2>
@@ -299,8 +299,8 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Me</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="testimonials.html">Reviews</a></li>
+                        <!--li><a href="gallery.html">Gallery</a></li-->
+                        <!--li><a href="reviews.html">Reviews</a></li-->
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <ul>
@@ -335,22 +335,8 @@
     </footer>
 
 
-    <script defer src="nav.js"></script>
-    <!--
-        This script adds a class to the body after scrolling 100px
-        and we used these body.scroll styles to create some on scroll 
-        animations with the navbar
-    -->
-    <script defer>
-        document.addEventListener('scroll', (e) => {
-            const scroll = document.documentElement.scrollTop;
-            if (scroll >= 100) {
-                document.querySelector('body').classList.add('scroll')
-            } else {
-                document.querySelector('body').classList.remove('scroll')
-            }
-        });
-    </script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/scroll.js"></script>
 
 </body>
 
