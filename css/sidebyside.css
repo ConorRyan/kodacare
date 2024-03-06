@@ -114,11 +114,6 @@
     -o-object-fit: cover;
     object-fit: cover;
   }
-
-  .sidebyside .image-box.square {
-    width: 40em;
-    height: 40em;
-  }
 }
 
 /* Inbetween */
@@ -151,169 +146,58 @@
   .sidebyside .content {
     margin: 0;
     width: 60%;
+    order: 2;
   }
 
   .sidebyside .image-box {
     margin: 0;
     margin-right: 10.625em;
-  }
-
-  .sidebyside .image-box.square {
-    width: 30em;
-    height: 30em;
+    order: 1;
   }
 }
-
 
 /*-- -------------------------- -->
 <---   Side By Side Reverse     -->
 <--- -------------------------- -*/
+
+/* Small Desktop */
+@media only screen and (min-width: 1300px) {
+
+  .sidebyside.reverse .content {
+    order: 1;
+  }
+
+  .sidebyside.reverse .image-box {
+    margin-left: 10.625em;
+    order: 2;
+  }
+
+  .sidebyside.reverse .image-box:before {
+    left: auto;
+    right: -2.5em;
+  }
+
+  .sidebyside.reverse .image-box:after {
+    right: auto;
+    left: -6.8125em;
+  }
+}
+
+/*-- -------------------------- -->
+<---   Side By Side Square     -->
+<--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  .sidebyside-reverse {
-    padding: 50px 0;
-  }
-
-  .sidebyside-reverse .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sidebyside-reverse .content {
-    order: 2;
-    margin: auto;
-    margin-top: 4.6875em;
-    max-width: 38.1875em;
-  }
-
-  .sidebyside-reverse .content h2 {
-    font-size: 3em;
-    margin-bottom: 0.875em;
-  }
-
-  .sidebyside-reverse .content p {
-    margin-bottom: 1.11111111em;
-  }
-
-  .sidebyside-reverse .content ul {
-    padding-left: 1.25em;
-    margin-bottom: 1.25em;
-  }
-
-  .sidebyside-reverse .content ul li {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .sidebyside-reverse .content ul li img {
-    margin-right: 0.625em;
-    margin-top: 0.22222222em;
-  }
-
-  .sidebyside-reverse .content .button-solid {
-    margin-top: 1.78571429em;
-  }
-
-  .sidebyside-reverse .image-box {
-    display: block;
-    position: relative;
-    margin: auto;
+  .sidebyside.square .image-box {
     width: 38.1875em;
-    height: 53.8125em;
-    font-size: min(1.4vw, 1em);
-  }
-
-  .sidebyside-reverse .image-box:before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: var(--primary);
-    opacity: 1;
-    top: 2.5em;
-    left: -2.5em;
-  }
-
-  .sidebyside-reverse .image-box:after {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 32.25em;
-    width: 28.75em;
-    background: url("../images/content-circles.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    top: -14.125em;
-    right: -6.8125em;
-    z-index: -1;
-  }
-
-  .sidebyside-reverse .image-box img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .sidebyside-reverse .image-box.square {
-    width: 40em;
-    height: 40em;
+    height: 38.1875em;
   }
 }
 
 /* Inbetween */
 @media only screen and (min-width: 666px) {
-  .sidebyside-reverse {
-    padding: 6.25em 0;
-  }
-}
-
-/* Small Desktop */
-@media only screen and (min-width: 1300px) {
-  .sidebyside-reverse {
-    padding: 9.375em 0;
-  }
-
-  .sidebyside-reverse .container {
-    max-width: 86.9375em;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .sidebyside-reverse .content {
-    margin: 0;
-    width: 60%;
-    order: 1;
-  }
-
-  .sidebyside-reverse .image-box {
-    margin: 0;
-    margin-left: 10.625em;
-    order: 2;
-  }
-
-  .sidebyside-reverse .image-box:before {
-    left: auto;
-    right: -2.5em;
-  }
-
-  .sidebyside-reverse .image-box:after {
-    right: auto;
-    left: -6.8125em;
-  }
-
-  .sidebyside-reverse .image-box.square {
-    width: 30em;
-    height: 30em;
+  .sidebyside.square .image-box {
+    width: 27.5em;
+    height: 27.5em;
   }
 }
