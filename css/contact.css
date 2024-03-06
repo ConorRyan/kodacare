@@ -48,12 +48,7 @@
   }
 
   #form #contact .input-group {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     margin-bottom: 1.875em;
   }
@@ -83,21 +78,6 @@
   #form #contact .input-group textarea {
     min-height: 12.5em;
     padding-top: 1.25em;
-  }
-
-  #form #contact .input-group ::-webkit-input-placeholder {
-    color: #d4d4d4;
-    font-family: "Roboto", sans-serif;
-  }
-
-  #form #contact .input-group :-ms-input-placeholder {
-    color: #d4d4d4;
-    font-family: "Roboto", sans-serif;
-  }
-
-  #form #contact .input-group ::-ms-input-placeholder {
-    color: #d4d4d4;
-    font-family: "Roboto", sans-serif;
   }
 
   #form #contact .input-group ::placeholder {
@@ -155,13 +135,8 @@
 
   #form .contact-right {
     max-width: 43.75em;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
@@ -178,17 +153,9 @@
 /* Tablet */
 @media only screen and (min-width: 48em) {
   #form #contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
@@ -227,7 +194,6 @@
   #form #contact .input-group textarea {
     border-bottom: none;
     position: relative;
-    -webkit-transition: padding .3s;
     transition: padding .3s;
     background: transparent;
   }
@@ -243,7 +209,6 @@
     bottom: -0.0625em;
     left: 0;
     z-index: 10;
-    -webkit-transition: height .3s, border .3s;
     transition: height .3s, border .3s;
     z-index: -1;
   }
@@ -260,13 +225,8 @@
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #form {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-line-pack: start;
     align-content: flex-start;
     font-size: 1.5vw;
     width: 100%;
@@ -287,9 +247,6 @@
   }
 
   #form .contact-right {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     max-width: 18.75em;
     margin: 0;

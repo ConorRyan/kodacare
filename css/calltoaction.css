@@ -40,7 +40,6 @@
     left: 0;
     height: 100%;
     width: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
   }
 
@@ -96,7 +95,6 @@
     opacity: 1;
     bottom: 0;
     left: 50%;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     z-index: -3;
   }
@@ -109,7 +107,6 @@
   #cta picture {
     width: 90.0625%;
     left: 50%;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
