@@ -15,7 +15,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGMPPM4YBJ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-CGMPPM4YBJ');
@@ -123,7 +123,8 @@
         <section id="form">
             <div class="left-section">
                 <p id="contact-ok" style="display: none;"><img aria-hidden="true" loading="lazy" decoding="async"
-                        src="images/icons/check.svg" alt="check mark" width="20" height="20"> Thanks for reaching out! I'll
+                        src="images/icons/check.svg" alt="check mark" width="20" height="20"> Thanks for reaching out!
+                    I'll
                     get back to you as soon as possible.</p>
                 <h2 class="title">Send a Message</h2>
                 <p>If you have any questions or concerns please feel free to contact me. I personally respond to every
@@ -256,6 +257,11 @@
 
     <script defer src="js/nav.js"></script>
     <script defer src="js/scroll.js"></script>
+    <script defer>
+        if (window.location.href.indexOf('contact-ok') != -1) {
+            document.getElementById('contact-ok').style.display = "block";
+        }
+    </script>
 
 </body>
 
