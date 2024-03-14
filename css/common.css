@@ -2,7 +2,7 @@
 <---        Core Styles         -->
 <--- -------------------------- -*/
 /* Mobile */
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 0px) {
   :root {
     --primary: #FFBA19;
     --primaryShade: #ffd675;
@@ -170,7 +170,7 @@
 <---         Navigation         -->
 <--- -------------------------- -*/
 /* Mobile - Top Drop Down */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
   #navigation {
     position: fixed;
     top: 0;
@@ -380,7 +380,7 @@
 }
 
 /* Desktop */
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1024px) {
   body.scroll #navigation .background-color-div {
     height: 100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -514,7 +514,7 @@
 <---   Interior Page Header     -->
 <--- -------------------------- -*/
 /* Mobile */
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 0px) {
   #int-hero {
     display: flex;
     justify-content: center;
@@ -581,7 +581,7 @@
 }
 
 /* Tablet */
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 768px) {
   #int-hero {
     font-size: 16px;
   }
@@ -592,7 +592,7 @@
 }
 
 /* Small Desktop */
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1024px) {
   #int-hero {
     min-height: 18.75em;
     height: auto;
@@ -607,7 +607,7 @@
 <---           Footer           -->
 <--- -------------------------- -*/
 /* Mobile */
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 0px) {
   #footer {
     background: #1C1C1C;
     padding: 5.25em 0 1.25em;
@@ -762,7 +762,7 @@
 }
 
 /* Small Desktop */
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1024px) {
   #footer {
     font-size: min(1.2vw, 1em);
   }
@@ -850,7 +850,7 @@
 <---      Language Select       -->
 <--- -------------------------- -*/
 /* Mobile */
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 0px) {
 
   #language-select {
     display: flex;
@@ -871,7 +871,7 @@
 }
 
 /* Desktop */
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1024px) {
   #language-select {
     position: relative;
     display: flex;

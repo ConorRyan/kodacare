@@ -2,7 +2,7 @@
 <---       Side By Side         -->
 <--- -------------------------- -*/
 /* Mobile */
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 0px) {
   .sidebyside {
     padding: 50px 0;
   }
@@ -106,7 +106,7 @@
 }
 
 /* Small Desktop */
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1024px) {
   .sidebyside {
     padding: 9.375em 0;
   }
@@ -136,7 +136,7 @@
 <--- -------------------------- -*/
 
 /* Small Desktop */
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1024px) {
 
   .sidebyside.reverse .content {
     order: 1;
@@ -163,7 +163,7 @@
 <---   Side By Side Square     -->
 <--- -------------------------- -*/
 /* Mobile */
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 0px) {
   .sidebyside.square .image-box {
     width: 38.1875em;
     height: 38.1875em;

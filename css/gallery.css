@@ -2,7 +2,7 @@
 <---         Gallery          -->
 <--- -------------------------- -*/
 /* Mobile */
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 0px) {
   #gallery {
     padding-top: 3.125em;
     padding-bottom: 35%;
@@ -92,7 +92,7 @@
 }
 
 /* Small Desktop */
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1024px) {
   #gallery {
     padding: 9.375em 0;
   }

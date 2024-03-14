@@ -2,7 +2,7 @@
 <---           Reviews          -->
 <--- -------------------------- -*/
 /* Mobile */
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 0px) {
   #reviews {
     padding-top: 7.5em;
     padding-bottom: 3.125em;
@@ -83,7 +83,7 @@
 }
 
 /* Tablet */
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 768px) {
   #reviews {
     padding-top: 9.375em;
     padding-bottom: 3.125em;

@@ -2,7 +2,7 @@
 <---    Final Call To Action    -->
 <--- -------------------------- -*/
 /* Mobile */
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 0px) {
   #cta {
     position: relative;
     padding: 3.125em 0;
@@ -65,14 +65,14 @@
 }
 
 /* Small Desktop */
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1024px) {
   #cta {
     padding: 10.5em 0;
   }
 }
 
 /* Large Desktop */
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1024px) {
   #cta {
     position: relative;
     margin-top: 6.25em;
