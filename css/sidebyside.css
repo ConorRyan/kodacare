@@ -88,6 +88,13 @@
     z-index: -1;
   }
 
+  .sidebyside .image-box .legend {
+    color: #1a1a1a;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+
   .sidebyside .image-box img {
     position: absolute;
     top: 0;
