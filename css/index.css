@@ -171,8 +171,8 @@
 
   .services .card picture {
     background: var(--primary);
-    width: 5.5em;
-    height: 5.5em;
+    width: 10em;
+    height: 10em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,9 +181,21 @@
     border-radius: 50%;
   }
 
+  .services .card:nth-child(1) picture {
+    background: var(--salmon);
+  }
+
+  .services .card:nth-child(2) picture {
+    background: var(--primary);
+  }
+
+  .services .card:nth-child(3) picture {
+    background: var(--blue);
+  }
+
   .services .card picture img {
-    width: 3em;
-    height: 3em;
+    width: 9em;
+    height: 9em;
   }
 
   .services .card h2 {

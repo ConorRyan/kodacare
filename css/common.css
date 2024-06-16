@@ -4,10 +4,12 @@
 /* Mobile */
 @media only screen and (min-width: 0px) {
   :root {
-    --primary: #FFBA19;
+    --primary: #f6d36a; /* #FFBA19 */
     --primaryShade: #ffd675;
     --primaryDark: #805d0d;
     --bodyText: #1a1a1a;
+    --blue: #afded9;
+    --salmon: #fd8f6c;
   }
 
   /* roboto-regular - latin */
