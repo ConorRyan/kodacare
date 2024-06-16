@@ -125,54 +125,49 @@
 
         <section id="form">
             <div class="left-section">
-                <p id="contact-ok" style="display: none;"><img aria-hidden="true" loading="lazy" decoding="async"
-                        src="images/icons/check.svg" alt="check mark" width="20" height="20"> Thanks for reaching out!
-                    I'll
-                    get back to you as soon as possible.</p>
+                <p id="contact-ok" style="display: none;">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/icons/check.svg"
+                        alt="check mark" width="20" height="20">
+                    Thanks for reaching out! I'll get back to you as soon as possible.
+                </p>
                 <h2 class="title">Send a Message</h2>
                 <p>If you have any questions or concerns please feel free to contact me. I personally respond to every
                     message and email.</p>
-                <form id="contact" name="Contact Form2" method="post" action="https://api.staticforms.xyz/submit">
+                <form id="contact" name="Contact Form" method="post" action="https://api.staticforms.xyz/submit">
                     <input type="hidden" name="accessKey" value="bdd6870a-6f06-4a21-b023-882487ca79bd">
                     <input type="text" name="honeypot" style="display: none;">
                     <input type="hidden" name="redirectTo" value="https://www.kodacare.com/contact.html?contact-ok=yes">
 
                     <div class="input-group">
                         <label for="name">Full Name</label>
-                        <input id="name" aria-label="name" class="input1" name="name" placeholder="Full Name"
-                            type="text" tabindex="0" required>
+                        <input id="name" aria-label="Full Name" class="input1" name="name" type="text" required>
                         <div aria-hidden="true" class="hover-box"></div>
                     </div>
 
                     <div class="input-group">
                         <label for="email">Email</label>
-                        <input id="email" aria-label="email" class="input1 right" name="email"
-                            placeholder="Email Address" type="email" required>
+                        <input id="email" aria-label="Email" class="input1 right" name="email" type="email" required>
                         <div aria-hidden="true" class="hover-box"></div>
                     </div>
 
                     <div class="input-group">
-                        <label for="phone">Phone</label>
-                        <input id="phone" aria-label="phone number" class="input1" name="phone"
-                            placeholder="Phone Number" type="tel" required>
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" aria-label="Phone Number" class="input1" name="phone" type="tel">
                         <div aria-hidden="true" class="hover-box"></div>
                     </div>
                     <div class="input-group">
                         <label for="location">Location</label>
-                        <input id="location" aria-label="location" class="input1 right" name="$location"
-                            placeholder="Your Location" type="text" required>
+                        <input id="location" aria-label="location" class="input1 right" name="$location" type="text">
                         <div aria-hidden="true" class="hover-box"></div>
                     </div>
                     <div class="input-group">
                         <label for="how">How did you hear about me</label>
-                        <input id="how" aria-label="how did you hear about me" name="$hear"
-                            placeholder="How Did You Hear About Me" type="text" required>
+                        <input id="how" aria-label="How did you hear about me" name="$hear" type="text">
                         <div aria-hidden="true" class="hover-box"></div>
                     </div>
                     <div class="input-group textarea">
                         <label for="message">Message</label>
-                        <textarea id="message" aria-label="write your message" name="$message"
-                            placeholder="Tell us about what you need help with" required></textarea>
+                        <textarea id="message" aria-label="Message" name="$message" required></textarea>
                         <div aria-hidden="true" class="hover-box"></div>
                     </div>
                     <p class="form-submit">
