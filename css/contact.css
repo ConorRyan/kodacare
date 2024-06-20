@@ -165,11 +165,7 @@
     position: relative;
   }
 
-  #form #contact .input-group:nth-of-type(5) {
-    width: 100%;
-  }
-
-  #form #contact .input-group:last-of-type {
+  #form #contact .input-group.full {
     width: 100%;
   }
 
