@@ -1,0 +1,42 @@
+/*-- -------------------------- -->
+<---       Collapsible          -->
+<--- -------------------------- -*/
+
+.collapsible {
+  border: 1px solid silver;
+  padding: 1em;
+  margin: 1em 0;
+  display: grid;
+  grid-template-rows: min-content 0fr;
+  row-gap: 0;
+  transition-property: grid-template-rows, row-gap;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+.collapsible > label {
+  cursor: pointer;
+}
+.collapsible > label::before {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  margin-right: 0.25em;
+  border-style: solid;
+  border-width: 0 0.1em 0.1em 0;
+  transform: translateY(-0.15em) rotate(-45deg);
+  transition: transform 0.3s ease;
+}
+.collapsible > label input[type="checkbox"] {
+  display: none;
+}
+.collapsible > *:nth-child(2) {
+  overflow: hidden;
+}
+.collapsible:has(> label input:checked) {
+  grid-template-rows: min-content 1fr;
+  row-gap: 1em;
+}
+.collapsible:has(> label input:checked) label::before {
+  transform: translateY(-0.15em) rotate(45deg);
+}
