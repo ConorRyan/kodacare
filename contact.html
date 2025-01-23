@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -8,9 +8,8 @@
 
     <link rel="canonical" href="https://www.kodacare.com/contact.html">
 
-    <meta name="description"
-        content="Animal-Assisted Therapy for therapeutic, motor aid, recreational and educational activities.">
-    <meta name="keywords" content="animal assisted therapy zootherapy emotional motricity physiotherapy dog canine">
+    <meta name="description" content="Thérapies et activitées assistées par l'animal en région outaouaise.">
+    <meta name="keywords" content="therapie assiste animal zootherapie emotionnel moteur motricity chien canitherapie">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGMPPM4YBJ"></script>
@@ -28,9 +27,8 @@
     </script>
 
     <!--Social Media Display-->
-    <meta property="og:title" content="KodaCare - Animal-Assisted Therapy">
-    <meta property="og:description"
-        content="Animal-Assisted Therapy for therapeutic, motor aid, recreational and educational activities.">
+    <meta property="og:title" content="KodaCare - Thérapies assistées par l'animal">
+    <meta property="og:description" content="Thérapies et activitées assistées par l'animal en région outaouaise.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.kodacare.com/contact.html">
     <meta property="og:image" content="android-chrome-384x384.png">
@@ -56,12 +54,12 @@
         <link rel="stylesheet" href="css/contact.css">
     </noscript>
 
-    <title>KodaCare | Contact</title>
+    <title>KodaCare | Me Contacter</title>
 </head>
 
 <body>
     <!--Screen reader skip main nav-->
-    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+    <a class="skip" aria-label="skip to main content" href="#main">Aller directement au contenu</a>
 
     <!-- ============================================ -->
     <!--                 Navigation                   -->
@@ -76,7 +74,7 @@
         </div>
         <div class="container">
             <!-- Logo -->
-            <a class="logo" aria-label="click to go to home page" href="index.html">
+            <a class="logo" aria-label="Revenir à la page d'accueil" href="index.html">
                 <img class="light" aria-hidden="true" src="images/logo/logo-full-white.png" decoding="async" alt="logo"
                     width="221" height="66">
                 <img class="dark" aria-hidden="true" src="images/logo/logo-full-black.png" decoding="async"
@@ -86,8 +84,8 @@
             <!--Main Nav-->
             <nav id="navbar-menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">Qui suis-je ?</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a class="active" href="contact.html">Contact</a></li>
                 </ul>
@@ -95,7 +93,7 @@
 
             <!--Language selection-->
             <span id="language-select">
-                <a href="contact_fr.html" aria-label="View french version of page">FR</a>
+                <a href="contact_en.html" aria-label="Voir la version anglaise de la page">EN</a>
             </span>
 
             <!--Mobile Nav toggle-->
@@ -112,11 +110,11 @@
         <!-- ============================================ -->
 
         <section id="int-hero">
-            <h1 id="home-h">Contact</h1>
+            <h1 id="home-h">Me Joindre</h1>
             <picture>
                 <source media="(min-width: 601px)" srcset="images/photos/koda-horizon.jpg">
                 <img aria-hidden="true" loading="lazy" decoding="async" src="images/photos/koda-horizon.jpg"
-                    alt="Koda and I looking out to the horizon" width="400" height="662">
+                    alt="Koda et moi assis en regardant l'horizon" width="400" height="662">
             </picture>
         </section>
 
@@ -129,36 +127,40 @@
                 <p id="contact-ok" style="display: none;">
                     <img aria-hidden="true" loading="lazy" decoding="async" src="images/icons/check.svg"
                         alt="check mark" width="20" height="20">
-                    Thanks for reaching out! I'll get back to you as soon as possible.
+                    Merci de m'avoir contactée! Je te reviens dès que possible.
                 </p>
-                <h2 class="title">Send me a message</h2>
+                <h2 class="title">Envoie-moi un message</h2>
                 <p>
-                    If you want to book a session or have any questions, please feel free to contact me. I personally
-                    respond to every message and email.
+                    Pour prendre un rendez-vous ou si tu as des questions, n'hésite pas à me contacter. Je réponds
+                    personnellement à tous les messages et courriels.
                 </p>
                 <p>
-                    In order to offer you the best possible care, I do not answer phone calls during my sessions.
+                    Afin de pouvoir t'offrir des soins de qualité, je ne réponds pas aux appels téléphoniques durant mes
+                    séances.
                 </p>
                 <form id="contact" name="Contact Form" method="post" action="https://api.staticforms.xyz/submit">
                     <input type="hidden" name="accessKey" value="bdd6870a-6f06-4a21-b023-882487ca79bd">
                     <input type="text" name="honeypot" style="display: none;">
-                    <input type="hidden" name="redirectTo" value="https://www.kodacare.com/contact.html?contact-ok=yes">
+                    <input type="hidden" name="redirectTo"
+                        value="https://www.kodacare.com/contact.html?contact-ok=yes">
 
                     <div class="input-group full">
-                        <label for="name">Full Name</label>
-                        <input id="name" aria-label="Full Name" class="input1" name="name" type="text" required>
+                        <label for="name">Nom et Prénom</label>
+                        <input id="name" aria-label="Nom et Prénom" class="input1" name="name" type="text" tabindex="0"
+                            required>
                         <div aria-hidden="true" class="hover-box"></div>
                     </div>
 
                     <div class="input-group">
-                        <label for="email">Email</label>
-                        <input id="email" aria-label="Email" class="input1" name="email" type="email" required>
+                        <label for="email">Addresse courriel</label>
+                        <input id="email" aria-label="Addresse courriel" class="input1 right" name="email" type="email"
+                            required>
                         <div aria-hidden="true" class="hover-box"></div>
                     </div>
 
                     <div class="input-group">
-                        <label for="phone">Phone Number</label>
-                        <input id="phone" aria-label="Phone Number" class="input1 right" name="phone" type="tel">
+                        <label for="phone">Numéro de téléphone</label>
+                        <input id="phone" aria-label="Numéro de téléphone" class="input1" name="phone" type="tel">
                         <div aria-hidden="true" class="hover-box"></div>
                     </div>
 
@@ -170,14 +172,14 @@
 
                     <p class="form-submit">
                         <button name="submit" type="submit" id="contact-submit" class="button-solid"
-                            data-submit="...Sending">Submit</button>
+                            data-submit="...Sending">Envoyer</button>
                     </p>
                 </form>
             </div>
             <div class="contact-right">
                 <div class="info-group">
-                    <span class="heading">Location</span>
-                    <span class="info">Liège, Belgium</span>
+                    <span class="heading">Localisation</span>
+                    <span class="info">Liège, Belgique</span>
                 </div>
                 <!--<div class="info-group">
                     <span class="heading">Instagram</span>
@@ -188,9 +190,10 @@
                     <a class="info" href="mailto:contact@kodacare.com">contact@kodacare.com</a>
                 </div>
                 <div class="info-group">
-                    <span class="heading">Hours</span>
-                    <span class="info">Monday to Friday: 9AM to 6PM</span>
-                    <span class="info last">My hours can be adjusted to suit your needs.</span>
+                    <span class="heading">Horaires</span>
+                    <span class="info">Du lundi au vendredi: 9h à 18h</span>
+                    <span class="info last">Les horaires d'intervention peuvent être adaptés en fonction de votre
+                        besoin.</span>
                 </div>
             </div>
         </section>
@@ -211,10 +214,10 @@
                 <div class="lists">
                     <ul>
                         <li>
-                            <h2>Information</h2>
+                            <h2>Informations</h2>
                         </li>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">Qui suis-je ?</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -222,16 +225,16 @@
                         <li>
                             <h2>Services</h2>
                         </li>
-                        <li>Therapeutic Support</li>
-                        <li>Motricity Development</li>
-                        <li>Recreational Activities</li>
-                        <li>Animal Discovery</li>
+                        <li>Soutien thérapeutique</li>
+                        <li>Développement de la motricité</li>
+                        <li>Activités récréatives</li>
+                        <li>Découverte des animaux</li>
                     </ul>
                     <ul>
                         <li>
                             <h2>Contact</h2>
                         </li>
-                        <li><a href="contact.html">Contact Form</a></li>
+                        <li><a href="contact.html">Formulaire de contact</a></li>
                         <li><a href="mailto:contact@kodacare.com">contact@kodacare.com</a></li>
                     </ul>
                 </div>
@@ -239,13 +242,13 @@
         </div>
 
         <div class="credit">
-            <span>Designed and coded by</span>
+            <span>Site conçu et développé par </span>
             <a href="https://github.com/conorryan" target="_blank" rel="noopener">Conor Ryan</a>
-            <span>thanks to <a href="https://github.com/Oak-Harbor-Kits/Starter-KitV3" target="_blank"
+            <span>grâce à <a href="https://github.com/Oak-Harbor-Kits/Starter-KitV3" target="_blank"
                     rel="noopener">Oak-Harbor-Kits/Starter-KitV3</a></span>
-            <span>and <a href="https://icons8.com/line-awesome" target="_blank" rel="noopener">line-awesome
-                    icons.</a></span>
-            <br><span class="copyright"> Copyright 2024 - Present</span>
+            <span>et les icônes <a href="https://icons8.com/line-awesome" target="_blank"
+                    rel="noopener">line-awesome.</a></span>
+            <br><span class="copyright"> Copyright 2024 - Aujourd'hui</span>
         </div>
     </footer>
 
